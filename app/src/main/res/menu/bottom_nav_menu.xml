@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/sugerenciasFragment"
+        android:title="Sugerencias"
+        android:icon="@drawable/sugerencias_icon"
+        />
+
+    <item
+        android:id="@+id/homeFragment"
+        android:title="Perfil"
+        android:icon="@drawable/perfil_icon"
+        />
+    <item
+        android:id="@+id/busquedaFragment"
+        android:title="Buscar"
+        android:icon="@drawable/search_icon"
+        />
+
+
+</menu>

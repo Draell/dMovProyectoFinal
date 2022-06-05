@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/frameLayout3"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".BusquedaFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="FragmentoBusqueda"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"/>
+
+    <EditText
+        android:id="@+id/etSearch"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="¿Que artículo deseas ver?"
+        android:layout_marginTop="50dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/btnFind"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnFind"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Buscar"
+        android:layout_marginTop="50dp"
+        android:layout_marginRight="20dp"
+        app:layout_constraintLeft_toRightOf="@id/etSearch"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvBuscadoId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Id"
+        android:layout_marginTop="50dp"
+        android:textSize="30sp"
+        app:layout_constraintTop_toBottomOf="@id/etSearch"
+        app:layout_constraintLeft_toLeftOf="parent"
+        />
+
+    <TextView
+        android:id="@+id/tvBuscadoTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Nombre Articulo"
+        android:layout_marginTop="30dp"
+        android:textSize="30sp"
+        app:layout_constraintTop_toBottomOf="@id/tvBuscadoId"
+        app:layout_constraintLeft_toLeftOf="parent"
+        />
+
+    <TextView
+        android:id="@+id/tvBuscadoPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Precio"
+        android:layout_marginTop="30dp"
+        android:textSize="30sp"
+        app:layout_constraintTop_toBottomOf="@id/tvBuscadoTitle"
+        app:layout_constraintLeft_toLeftOf="parent"
+        />
+
+    <TextView
+        android:id="@+id/tvBuscadoCateg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Categoría"
+        android:layout_marginTop="30dp"
+        android:textSize="30sp"
+        app:layout_constraintTop_toBottomOf="@id/tvBuscadoPrice"
+        app:layout_constraintLeft_toLeftOf="parent"
+        />
+
+    <TextView
+        android:id="@+id/tvBuscadoDesc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Descripción"
+        android:layout_marginTop="30dp"
+        android:textSize="30sp"
+        app:layout_constraintTop_toBottomOf="@id/tvBuscadoCateg"
+        app:layout_constraintLeft_toLeftOf="parent"
+        />
+
+    <Button
+        android:id="@+id/btnSave"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Guardar"
+        android:layout_marginTop="50dp"
+        android:layout_marginRight="20dp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btnFind" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
